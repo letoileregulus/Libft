@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:55:26 by agokcek           #+#    #+#             */
-/*   Updated: 2024/10/25 16:50:35 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/10/26 16:54:24 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 // int main()
 // {
 //     char x[] = "Selam Ali";
-//     char y[] = "Ahmed";
-    
+//     char y[] = "Ahmed";  
 //     printf("%zu",ft_strlcpy(x,y,3));
 //     printf("%s",x);
 // }
