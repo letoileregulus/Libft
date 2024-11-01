@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:26:25 by agokcek           #+#    #+#             */
-/*   Updated: 2024/10/27 15:26:49 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/01 12:24:02 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-#include <string.h>
-int main() {
-    const char *haystack = "dfdadda";
-    const char *needle = "";
-    char *result = ft_strnstr(haystack, needle, 15);
+// #include <string.h>
+// int main() {
+//     const char *haystack = "dfdadda";
+//     const char *needle = "";
+//     char *result = ft_strnstr(haystack, needle, 15);
     
-    if (result) {
-        printf("Bulundu: %s\n", result);
-    } else {
-        printf("Bulunamadı.\n");
-    }
-	return (0);
-}
+//     if (result) {
+//         printf("Bulundu: %s\n", result);
+//     } else {
+//         printf("Bulunamadı.\n");
+//     }
+// 	return (0);
+// }

@@ -1,5 +1,5 @@
 NAME = libft.a
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 SRC = $(shell find . ! -name "ft_lst*.c" -name "ft_*.c")
 OBJ = $(SRC:.c=.o)

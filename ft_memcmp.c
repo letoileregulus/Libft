@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:19:07 by agokcek           #+#    #+#             */
-/*   Updated: 2024/10/27 14:19:35 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/01 13:56:08 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,11 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     ptr2 = s2;
     i = 0;
     while (i < n) {
-        if (ptr1[i] != ptr2[i]) {
-            return ptr1[i] - ptr2[i];
-            i++;
-        }
+        if (ptr1[i] != ptr2[i])
+            return (ptr1[i] - ptr2[i]);
+        i++;
     }
-    return 0;
+    return (0);
 }
 
 // int main()
