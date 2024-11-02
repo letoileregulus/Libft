@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 15:01:01 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 16:23:50 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/02 13:52:11 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static char	*ft_cat(char *dest, const char *src)
 {
-	int i;
-	int len;
+	int	i;
+	int	len;
 
 	i = 0;
 	len = ft_strlen(dest);
@@ -27,22 +27,24 @@ static char	*ft_cat(char *dest, const char *src)
 	dest[len + i] = '\0';
 	return (dest);
 }
+
 static char	*ft_strncpy(char *dst, char const *src, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (dst == NULL || src == NULL)
 		return (NULL);
 	while (i < n && src[i])
-    {
+	{
 		dst[i] = src[i];
-        i++;
-    }
+		i++;
+	}
 	while (i < n)
 		dst[i++] = '\0';
 	return (dst);
 }
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	lens1;
@@ -53,7 +55,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	lens1 = ft_strlen(s1);
 	lens2 = ft_strlen(s2);
-	if ((str = ft_calloc(lens1 + lens2 + 1, sizeof(char))) == NULL)
+	str = ft_calloc(lens1 + lens2 + 1, sizeof(char));
+	if (str == NULL)
 		return (NULL);
 	ft_strncpy(str, s1, lens1);
 	ft_cat(str, s2);

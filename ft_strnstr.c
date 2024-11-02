@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:26:25 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 12:24:02 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/02 13:53:26 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 //     const char *haystack = "dfdadda";
 //     const char *needle = "";
 //     char *result = ft_strnstr(haystack, needle, 15);
-    
 //     if (result) {
 //         printf("Bulundu: %s\n", result);
 //     } else {

@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:26:44 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 17:28:45 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/02 12:06:38 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
-	
 	while (i <= ft_strlen(s))
 	{
 		if (s[i] == (unsigned char)c)

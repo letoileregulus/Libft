@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:32:16 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 17:01:30 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/02 13:40:25 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,27 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		end;
-	char	*str;
+	int	i;
+	int	j;
 
+	i = 0;
+	j = ft_strlen(s1) - 1;
 	if (!s1 || !set)
 		return (NULL);
-	start = 0;
-	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[start]) && start <= end)
-		start++;
-	if (start > end)
-		return (ft_strdup(s1 + end + 1));
-	while (ft_strchr(set, s1[end]) && end >= 0)
-		end--;
-	str = malloc(end - start + 2);
-	if (!str)
-		return (NULL);
-	ft_strlcpy(str, &s1[start], end - start + 2);
-	return (str);
+	while (s1[i] && ft_strchr(set, s1[i]) != NULL)
+		i++;
+	while (j > i && ft_strchr(set, s1[j]) != NULL)
+		j--;
+	return (ft_substr(s1, i, j - i + 1));
 }
+
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char *x ="DunyaMerhabaDunya";
+// 	char *y ="Dunya";
+// 	char *a = ft_strtrim(x,y);
+// 	printf("%s", a);
+// }

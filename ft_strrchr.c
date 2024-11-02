@@ -6,29 +6,25 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 13:30:37 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 14:18:06 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/02 16:44:49 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdio.h"
-#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
+	size_t	i;
 
-	i = strlen(s);
-	
+	i = ft_strlen(s);
 	while (i > 0)
 	{
 		if (s[i] == (unsigned char)c)
 			return ((char *)s + i);
 		i--;
 	}
-
 	if (i == 0 && s[i] == (unsigned char)c)
-		return ((char *)s +i);
+		return ((char *)s + i);
 	return (NULL);
 }
 
