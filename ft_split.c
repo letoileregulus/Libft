@@ -6,94 +6,72 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 11:37:07 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/03 13:51:18 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/11 15:17:34 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	char	*ft_strncpy(char *dest, const char *src, size_t n)
+static int	countwords(const char *s, char c)
 {
-	size_t i = 0;
-	while (i < n && src[i] !='\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
-}
-static	int	word_counter(const char *s, char c)
-{
-	int	count = 0;
-	int	flag = 0;
-	
+	int	i;
+	int	count;
+
+	i = 0;
+	if (!*s)
+		return (0);
 	count = 0;
-	flag = 0;
 	while (*s)
 	{
-		if (*s != c && flag == 0)
-		{
-			flag = 1;
+		while (*s == c)
+			s++;
+		if (*s)
 			count++;
-		}
-		else if (*s == c)
-			flag = 0;
-		s++;
+		while (*s != c && *s)
+			s++;
 	}
 	return (count);
 }
 
-static	char	*malloc_word(const char *start, int len)
+static char	**check(char **s)
 {
-	char *word;
-	word = (char *)malloc((len + 1)*sizeof(char));
-	if (!word)
-		return (NULL);
-	ft_strncpy(word, start, len);
-	word[len] = '\0';
-	return (word);
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		free(s[i]);
+		i++;
+	}
+	free(s);
+	return (0);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	size_t	word_len;
-	char	**result;
-	
-	result = (char **)malloc((word_counter(s,c) + 1)*sizeof(char *));
-	if(!s || !result)
+	int		j;
+	char	**tab;
+
+	tab = (char **)malloc((countwords(s, c) + 1) * sizeof(char *));
+	if (tab == NULL)
 		return (NULL);
 	i = 0;
-	while(*s)
+	while (*s)
 	{
-		if (*s != c)
-		{
-			const	char	*start;
-			int	len;
-			start = s;
-			len = 0;
-			while (*s && *s != c)
-			{
-				len++;
-				s++;
-			}
-			result[i] = malloc_word(start,len);
-			if (!result[i] )
-			{
-				while (i > 0)
-					free(result[--i]);
-				free(result);
-				return (NULL);
-			}
-			i++;
-		}
-		else
+		if (*s == c)
 			s++;
+		else
+		{
+			j = 0;
+			while (s[j] && s[j] != c)
+				j++;
+			tab[i] = ft_substr(s, 0, j);
+			if (tab[i++] == NULL)
+				return (check(tab));
+			s += j;
+		}
 	}
-	result[i] = NULL;
-	return result;
+	tab[i] = NULL;
+	return (tab);
 }
