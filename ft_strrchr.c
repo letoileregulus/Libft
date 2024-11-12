@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 13:30:37 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/02 16:44:49 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/12 16:04:37 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-
-// int main() {
-//     const char *str = "Merhaba Dünya";
-//     char *result = strrchr(str, '\0');
-//     if (result) {
-//         printf("Son '%c' karakteri: %s\n", result[0],result);
-//     } else {
-//         printf("'a' karakteri bulunamadı.\n");
-//     }
-//     return 0;
-// }

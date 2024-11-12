@@ -6,12 +6,17 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 10:51:13 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/11 16:21:44 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/12 14:34:12 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+
+int	main()
+{
+	return (0);
+}
 
 // char caesar_cipher(unsigned int i, char c)
 // {

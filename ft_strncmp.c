@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:28:32 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 17:23:49 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/12 16:11:12 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((unsigned char)(*s1) - (unsigned char)(*s2));
 }
-
-// int main() {
-//     const char *s1 = "ali burak gitti";
-//     const char *s2 = "ali burak geldi";
-//     printf("s1 ve s2 karşılaştırması 
-//(ilk 5 karakter): %d\n", ft_strncmp(s1, s2, 12)); // 0
-//     return 0;
-// }
