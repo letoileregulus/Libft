@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:32:16 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/02 13:40:25 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/13 16:03:08 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j--;
 	return (ft_substr(s1, i, j - i + 1));
 }
-
-// #include "libft.h"
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char *x ="DunyaMerhabaDunya";
-// 	char *y ="Dunya";
-// 	char *a = ft_strtrim(x,y);
-// 	printf("%s", a);
-// }

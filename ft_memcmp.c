@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 12:19:07 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/02 13:42:51 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/13 13:12:05 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,21 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main()
-// {
-//     int f1;
-//     int f2;
-//     int f3;
-
-//     f1 = 4328687;
-//     f2 = 2334876;
-//     f3 = 24934;
-
-//     int result1 = ft_memcmp(&f1, &f2, sizeof(f1)); 
-//     int result2 = ft_memcmp(&f3, &f1, sizeof(f1));
-
-//     printf("Result1: %d\n", result1); // 0 döner
-//     printf("Result2: %d\n", result2); // Negatif veya pozitif değer döner
-//     return (0);
-// }

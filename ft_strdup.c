@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 17:32:02 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/01 17:06:35 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/13 14:14:35 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,3 @@ char	*ft_strdup(const char *s)
 	copy[len] = '\0';
 	return (copy);
 }
-// int main() {
-//     const char *original = "Hello, World!";
-//     char *duplicate = ft_strdup(original);
-
-//     if (duplicate != NULL) {
-//         printf("Original: %p\n", original);
-//         printf("Duplicate: %p\n", duplicate);
-//         free(duplicate);
-//     } else {
-//         printf("Bellek ayırma başarısız oldu.\n");
-//     }
-//     return 0;
-// }

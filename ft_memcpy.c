@@ -6,7 +6,7 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 14:12:01 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/02 16:47:01 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/13 11:12:24 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,28 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// int main()
-// {
-// 	int x[] = {23,43,65,87,54};
-// 	int y[] = {45,25,58,45};
-// 	char a[] = "MAkpolat";
-// 	char b[] = "AYildiz";
-// 	ft_memcpy(a + 3,b,5);
-// 	ft_memcpy(x,y,16);
-// 	int i;
-// 	int j;
-// 	i = 0;
-// 	while (i < 9)
-// 	{
-// 		printf("%d\n",x[i]);
-// 	// 	printf("%d\n",*(int *)(ft_memcpy(x+i,y+i,4)));
-// 		i++;
-// 	}
-// 	j = 0;
-// 	while (j < 9)
-// 	{
-// 		printf("%s\n",a);
-// 		j++;
-// 	}
-// }

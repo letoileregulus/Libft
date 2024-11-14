@@ -6,11 +6,12 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 17:59:47 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/11 18:16:59 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/13 17:34:17 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -29,11 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-
-// #include <fcntl.h>
-
-// int main()
-// {
-// 	int fd = open("bbbb.txt", O_CREAT | O_RDWR, 777);
-// 	ft_putnbr_fd(12376, fd);
-// }

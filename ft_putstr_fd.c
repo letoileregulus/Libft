@@ -6,11 +6,11 @@
 /*   By: agokcek <agokcek@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:58:09 by agokcek           #+#    #+#             */
-/*   Updated: 2024/11/11 18:14:42 by agokcek          ###   ########.fr       */
+/*   Updated: 2024/11/13 17:34:26 by agokcek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {
@@ -23,10 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-// #include <fcntl.h>
-
-// int main()
-// {
-// 	int fd = open("emre.txt", O_CREAT | O_RDWR, 777);
-// 	ft_putstr_fd("Emre AKPOLAT", fd);
-// }
