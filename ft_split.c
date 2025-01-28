@@ -14,10 +14,8 @@
 
 static int	countwords(const char *s, char c)
 {
-	int	i;
 	int	count;
 
-	i = 0;
 	if (!*s)
 		return (0);
 	count = 0;
